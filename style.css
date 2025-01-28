@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total */
+    box-sizing: border-box; 
     font-family: "Poppins", sans-serif;
     background-color: #eee;
     margin: 0;
@@ -18,7 +18,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 800px; /* Lebar maksimum untuk desktop */
+    max-width: 800px; 
     text-align: center;
 }
 
@@ -54,19 +54,17 @@ button:hover {
 }
 
 button:active {
-    transform: scale(0.95); /* Efek scaling saat tombol ditekan */
+    transform: scale(0.95); 
 }
 
-/* Gaya untuk container hasil pencarian */
 #results {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    justify-content: center; /* Pusatkan card di dalam container */
+    justify-content: center; 
 }
 
-/* Gaya untuk card anime */
 .anime-card {
     position: relative;
     width: 200px;
@@ -82,7 +80,6 @@ button:active {
     transform: scale(1.05);
 }
 
-/* Gaya untuk gambar anime */
 .anime-image {
     width: 100%;
     height: auto;
@@ -93,7 +90,7 @@ img {
     object-fit: cover;
     object-position: center;
 }
-/* Gaya untuk rating (position absolute) */
+
 .anime-rating {
     position: absolute;
     top: 10px;
@@ -106,10 +103,9 @@ img {
     font-weight: bold;
 }
 
-/* Gaya untuk detail anime */
 .anime-details {
     padding: 10px;
-    text-align: left; /* Teks di-align ke kiri untuk konsistensi */
+    text-align: left; 
 }
 
 .anime-details h3 {
@@ -128,7 +124,6 @@ img {
     }
 }
 
-/* Responsif untuk layar kecil (ponsel) */
 @media (max-width: 600px) {
     .container {
         width: 95%;
@@ -149,7 +144,7 @@ img {
 
     .anime-card {
         display: flex;
-        width: 100%; /* Lebar penuh pada layar kecil */
+        width: 100%; 
     }
 
     .anime-card img {
@@ -168,7 +163,6 @@ img {
     }
 }
 
-/* Responsif untuk layar sedang (tablet) */
 @media (min-width: 601px) and (max-width: 900px) {
     .container {
         width: 90%;
@@ -176,13 +170,12 @@ img {
     }
 
     .anime-card {
-        width: calc(50% - 10px); /* Dua card per baris dengan gap 20px */
+        width: calc(50% - 10px); 
     }
 }
 
-/* Responsif untuk layar besar (desktop) */
 @media (min-width: 901px) {
     .anime-card {
-        width: calc(33.333% - 14px); /* Tiga card per baris dengan gap 20px */
+        width: calc(33.333% - 14px); 
     }
 }
